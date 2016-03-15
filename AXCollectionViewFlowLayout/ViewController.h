@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
-
+/// Collection view.
+@property(weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
 
