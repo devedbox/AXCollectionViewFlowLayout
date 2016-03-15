@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AXCollectionViewFlowLayout"
-  s.version      = "1.0.1"
-  s.summary      = "A custom flow layout of UICollectionView."
+  s.version      = "1.0.0"
+  s.summary      = "A custom flow layout."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                    A custom flow layout of UICollectionView.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/AXCollectionViewFlowLayout"
+  s.homepage     = "https://github.com/devedbox/AXCollectionViewFlowLayout"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
