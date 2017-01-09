@@ -41,7 +41,16 @@
 }
 
 - (void)initializer {
+    /*
     _scaleBounciness = 0.06;
+     */
+    _horizontalScaleBounciness = 0.06;
+    _verticalScaleBounciness = 0.06;
+}
+
+- (void)setScaleBounciness:(CGFloat)scaleBounciness {
+    [self setHorizontalScaleBounciness:scaleBounciness];
+    [self setVerticalScaleBounciness:scaleBounciness];
 }
 
 #pragma mark - Override
@@ -63,8 +72,12 @@
         if (CGRectIntersectsRect(modifiedAttributes.frame, rect)) {
             CGFloat distance = CGRectGetMidX(visibleRect) - modifiedAttributes.center.x;
             CGFloat normalizedDistance = distance / modifiedAttributes.size.width;
-            CGFloat zoom = 1 - _scaleBounciness * ABS(normalizedDistance);
-            modifiedAttributes.transform3D = CATransform3DMakeScale(zoom, zoom, 1.0);
+            /*
+             CGFloat zoom = 1 - _scaleBounciness * ABS(normalizedDistance);
+             */
+            CGFloat horizontalZoom = 1 - _horizontalScaleBounciness * ABS(normalizedDistance);
+            CGFloat verticalZoom = 1 - _verticalScaleBounciness * ABS(normalizedDistance);
+            modifiedAttributes.transform3D = CATransform3DMakeScale(horizontalZoom, verticalZoom, 1.0);
             modifiedAttributes.zIndex = 1;
         }
         [modifiedArray addObject:modifiedAttributes];
