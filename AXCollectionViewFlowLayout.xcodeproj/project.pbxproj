@@ -39,7 +39,37 @@
 		01979EC71C97E80A00D02B0B /* 23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01979EB01C97E80A00D02B0B /* 23.jpg */; };
 		01979ECB1C97E86E00D02B0B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01979EC91C97E86E00D02B0B /* CollectionViewCell.m */; };
 		01979ECC1C97E86E00D02B0B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01979ECA1C97E86E00D02B0B /* CollectionViewCell.xib */; };
+		DC9975931F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9975911F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC9975961F7E3278008FD921 /* AXCollectionViewFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC99758F1F7E3278008FD921 /* AXCollectionViewFlowLayout.framework */; };
+		DC9975971F7E3278008FD921 /* AXCollectionViewFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC99758F1F7E3278008FD921 /* AXCollectionViewFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC99759C1F7E328A008FD921 /* AXCollectionViewFlowLayout.h in Sources */ = {isa = PBXBuildFile; fileRef = 01979E951C97DE1300D02B0B /* AXCollectionViewFlowLayout.h */; };
+		DC99759D1F7E328A008FD921 /* AXCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01979E961C97DE1300D02B0B /* AXCollectionViewFlowLayout.m */; };
+		DC99759E1F7E328F008FD921 /* AXCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 01979E951C97DE1300D02B0B /* AXCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC9975941F7E3278008FD921 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01979E731C97DDF900D02B0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC99758E1F7E3278008FD921;
+			remoteInfo = AXCollectionViewFlowLayoutFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC99759B1F7E3278008FD921 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC9975971F7E3278008FD921 /* AXCollectionViewFlowLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01979E7B1C97DDF900D02B0B /* AXCollectionViewFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXCollectionViewFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +110,21 @@
 		01979EC81C97E86E00D02B0B /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		01979EC91C97E86E00D02B0B /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		01979ECA1C97E86E00D02B0B /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		DC99758F1F7E3278008FD921 /* AXCollectionViewFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AXCollectionViewFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9975911F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXCollectionViewFlowLayoutFramework.h; sourceTree = "<group>"; };
+		DC9975921F7E3278008FD921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01979E781C97DDF900D02B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9975961F7E3278008FD921 /* AXCollectionViewFlowLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC99758B1F7E3278008FD921 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				01979E7D1C97DDF900D02B0B /* AXCollectionViewFlowLayout */,
+				DC9975901F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework */,
 				01979E7C1C97DDF900D02B0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				01979E7B1C97DDF900D02B0B /* AXCollectionViewFlowLayout.app */,
+				DC99758F1F7E3278008FD921 /* AXCollectionViewFlowLayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +220,28 @@
 			path = "屏保";
 			sourceTree = "<group>";
 		};
+		DC9975901F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework */ = {
+			isa = PBXGroup;
+			children = (
+				DC9975911F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework.h */,
+				DC9975921F7E3278008FD921 /* Info.plist */,
+			);
+			path = AXCollectionViewFlowLayoutFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC99758C1F7E3278008FD921 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9975931F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework.h in Headers */,
+				DC99759E1F7E328F008FD921 /* AXCollectionViewFlowLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		01979E7A1C97DDF900D02B0B /* AXCollectionViewFlowLayout */ = {
@@ -187,15 +251,35 @@
 				01979E771C97DDF900D02B0B /* Sources */,
 				01979E781C97DDF900D02B0B /* Frameworks */,
 				01979E791C97DDF900D02B0B /* Resources */,
+				DC99759B1F7E3278008FD921 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC9975951F7E3278008FD921 /* PBXTargetDependency */,
 			);
 			name = AXCollectionViewFlowLayout;
 			productName = AXCollectionViewFlowLayout;
 			productReference = 01979E7B1C97DDF900D02B0B /* AXCollectionViewFlowLayout.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DC99758E1F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC99759A1F7E3278008FD921 /* Build configuration list for PBXNativeTarget "AXCollectionViewFlowLayoutFramework" */;
+			buildPhases = (
+				DC99758A1F7E3278008FD921 /* Sources */,
+				DC99758B1F7E3278008FD921 /* Frameworks */,
+				DC99758C1F7E3278008FD921 /* Headers */,
+				DC99758D1F7E3278008FD921 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXCollectionViewFlowLayoutFramework;
+			productName = AXCollectionViewFlowLayoutFramework;
+			productReference = DC99758F1F7E3278008FD921 /* AXCollectionViewFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -209,6 +293,11 @@
 					01979E7A1C97DDF900D02B0B = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = TKA48YVS5T;
+					};
+					DC99758E1F7E3278008FD921 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = TKA48YVS5T;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -226,6 +315,7 @@
 			projectRoot = "";
 			targets = (
 				01979E7A1C97DDF900D02B0B /* AXCollectionViewFlowLayout */,
+				DC99758E1F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +355,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC99758D1F7E3278008FD921 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -280,7 +377,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC99758A1F7E3278008FD921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC99759C1F7E328A008FD921 /* AXCollectionViewFlowLayout.h in Sources */,
+				DC99759D1F7E328A008FD921 /* AXCollectionViewFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC9975951F7E3278008FD921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC99758E1F7E3278008FD921 /* AXCollectionViewFlowLayoutFramework */;
+			targetProxy = DC9975941F7E3278008FD921 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01979E871C97DDF900D02B0B /* Main.storyboard */ = {
@@ -386,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TKA48YVS5T;
 				INFOPLIST_FILE = AXCollectionViewFlowLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,11 +513,88 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TKA48YVS5T;
 				INFOPLIST_FILE = AXCollectionViewFlowLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = devedbox.AXCollectionViewFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC9975981F7E3278008FD921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TKA48YVS5T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AXCollectionViewFlowLayoutFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devedbox.AXCollectionViewFlowLayoutFramework;
+				PRODUCT_NAME = AXCollectionViewFlowLayout;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC9975991F7E3278008FD921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TKA48YVS5T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AXCollectionViewFlowLayoutFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devedbox.AXCollectionViewFlowLayoutFramework;
+				PRODUCT_NAME = AXCollectionViewFlowLayout;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -423,6 +615,15 @@
 			buildConfigurations = (
 				01979E931C97DDF900D02B0B /* Debug */,
 				01979E941C97DDF900D02B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC99759A1F7E3278008FD921 /* Build configuration list for PBXNativeTarget "AXCollectionViewFlowLayoutFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9975981F7E3278008FD921 /* Debug */,
+				DC9975991F7E3278008FD921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
